@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url('https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    color:white;
+    font-size:4rem;
+    letter-spacing:4px;
+}
+
+.hero-content p{
+    color:white;
+    font-size:1.2rem;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#d4af37;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#b8942c;
+}
+
+/* CATÁLOGO */
+
+.catalogo{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.catalogo h2{
+    margin-bottom:40px;
+    font-size:2.2rem;
+}
+
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 10px;
+}
+
+.card p{
+    padding:0 20px;
+    color:#666;
+}
+
+.card span{
+    display:block;
+    margin:20px 0;
+    font-weight:bold;
+    color:#d4af37;
+    font-size:1.2rem;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+    padding:80px 15%;
+    background:white;
+    text-align:center;
+}
+
+.nosotros h2{
+    margin-bottom:20px;
+}
+
+.nosotros p{
+    line-height:1.8;
+    color:#555;
+}
+
+/* CONTACTO */
+
+.contacto{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.contacto h2{
+    margin-bottom:20px;
+}
+
+.contacto p{
+    margin:10px 0;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+}
